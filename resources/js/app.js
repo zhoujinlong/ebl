@@ -30,3 +30,15 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#app',
 });
+
+$(document).ready(function(){
+    swal({
+        content: {
+            element: "input",
+            attributes: {
+                placeholder: "Type your password",
+                type: "password",
+            },
+        },
+    });
+});
